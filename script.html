@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head></head>
+<body>
+    <h1>javascript in html</h1>
+    <div>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML="Hello world";
+    </script>
+    </div>
+    <div>
+        <p id="hello"></p>
+        <button type="button" onclick="document.getElementById('hello').innerHTML=Date()">Click me</button>
+    </div>
+
+    <div>
+        <p id="first">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Unde debitis dol</p>
+        <script>
+            function GetData()
+            {
+                document.getElementById('first').style.backgroundColor="pink";
+                document.getElementById('first').style.color="black";
+                document.getElementById('first').style.width="500px";
+                document.getElementById('first').style.border="5px solid black";
+
+            }
+        
+        </script>
+        <button type="button" onclick="GetData()">press</button>
+    </div>
+
+
+<video width="200px" height="200px" controls>
+    <source src="https://cdn.pixabay.com/vimeo/340670744/sea-24216.mp4?width=640&hash=f5d8caac458392ac811be5aaf088a820fbcb1fdb" type="video/mp4">
+    
+</video> 
+<br>
+
+
+<iframe width="250px" height="250px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+
+</iframe >
+<audio width="200" height="250" controls>
+<source src="C:\Users\hakes\Downloads\mixkit-crickets-and-insects-in-the-wild-ambience-39.wav"></audio>
+
+</body>
+</html>

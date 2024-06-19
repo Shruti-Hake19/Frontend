@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=""UTF-8>
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation</title>
+        <style>
+div{
+    height: 70px;
+    width: 70px;
+    background-color: forestgreen;
+    position: relative;
+    animation-name: Shruti;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 5;
+    animation-fill-mode: forwards;
+    border-radius: 20px;
+}
+@keyframes Shruti{
+    from{background-color: darkred;}
+    to{background-color: cornflowerblue;}
+
+    0%{background-color: red; left:0px ; top: 0px;}
+    25%{background-color: aqua; left:100px; top:0px;}
+    50%{background-color: blue; left:300px; top:300px;}
+    100%{background-color: yellow; left: 200px; top:300px}
+}
+#div1{
+    animation-timing-function: linear;
+}
+#div2{
+
+    animation-timing-function:ease ;
+}
+#div3{
+animation-timing-function: ease-out;
+}
+#div4{
+animation-timing-function:ease-in ;
+}
+#div5{
+    animation-timing-function:ease-in-out ;
+}
+
+
+        </style>
+        </head>
+    <body>
+        <h1>Css Animation</h1>
+    
+        <div id="div1">linear</div>
+        <div id="div2">ease</div>
+        <div id="div3">ease-out</div>
+        <div id="div4">ease-in</div>
+        <div id="div5">ease-in-out</div>
+    </body>
+</html>
